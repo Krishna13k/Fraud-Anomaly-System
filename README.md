@@ -21,6 +21,10 @@ This project simulates how modern fraud detection systems work in practice:
 
 ---
 
+## Dashboard Preview
+
+![Fraud Dashboard](docs/dashboard.png)
+
 ## Architecture
 
 Client / Script  
