@@ -1,9 +1,10 @@
+import os
 import time
 import requests
 import pandas as pd
 import streamlit as st
 
-DEFAULT_API = "http://127.0.0.1:8000"
+DEFAULT_API = os.getenv("API_BASE_URL", "http://127.0.0.1:8000")
 
 st.set_page_config(page_title="Fraud Review Dashboard", layout="wide")
 
