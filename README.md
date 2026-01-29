@@ -25,6 +25,31 @@ This project simulates how modern fraud detection systems work in practice:
 
 ![Fraud Dashboard](docs/dashboard.png)
 
+## Quick Demo (2 minutes)
+
+The fastest way to see the system in action:
+
+docker compose up --build
+
+Open:
+
+- API docs: http://localhost:8000/docs
+- Dashboard: http://localhost:8501
+
+When running in Docker, the dashboard auto-connects to the API.
+
+Run the simulated fraud attack:
+
+python training/demo_attack.py
+
+This will:
+
+1. Retrain the anomaly detection model
+2. Generate normal user behavior
+3. Launch a burst of fraudulent transactions
+4. Flag suspicious events with explanations
+5. Populate the fraud review queue in the dashboard
+
 ## Architecture
 
 Client / Script  
